@@ -13,9 +13,9 @@ main {
 
 .header {
 	display: grid;
-	grid-template-columns: 1.51fr 2fr 1.5fr;
-	align-items: center;
-	padding: 92px 51px 89px;
+  grid-template-columns: 1.51fr 2fr 1.5fr;
+  align-items: center;
+  padding: 92px 24px 96px;
 }
 
 .header_links_list {
@@ -51,13 +51,15 @@ li.header_links_list_item_active {
 
 .header_logo {
 	display: block;
-    width: 148px;
-    justify-self: center;
-  	align-self: center;
+	width: 148px;
+	/*    justify-self: center;*/
+	margin-left: 36px;
+	align-self: center;
 }
 
 .header_logo_image {
-	width: 100%;
+	width: 148px;
+    height: 105px;
 }
 
 .address {
@@ -66,7 +68,12 @@ li.header_links_list_item_active {
 
 .header_address {
 	justify-self: end;
-  	font-style: inherit;
+	font-style: inherit;
+	padding-top: 5px;
+	width: 240.52px;
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
 }
 
 .address_item {
@@ -78,7 +85,7 @@ li.header_links_list_item_active {
 
 .address_address_text {
 	font-size: 18px;
-  	line-height: 1.35;
+  line-height: 1.35;
 }
 
 /* Меню с подложкой темной */
@@ -176,14 +183,15 @@ li.header_links_list_item_active {
 }
 
 .lots {
-	padding: 0 50px;
+	padding: 0 24px;
 }
 
 .lots_heading {
-	padding: 0 0 30px 40px;
-	font-weight: bold;
+	padding-left: 40px;
+    padding-bottom: 27px;
+	font-weight: 700;
 	font-size: 40px;
-	line-height: 1;
+	line-height: 46.96px;
 	text-transform: uppercase;
 }
 
@@ -207,8 +215,9 @@ li.header_links_list_item_active {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	width: auto;
+	width: 334px;
 	height: 100%;
+/*    min-height: 563px;*/
 	justify-content: space-between;
 	gap: 30px;
 	padding: 50px 40px;
@@ -242,9 +251,9 @@ li.header_links_list_item_active {
   position: relative;
   z-index: 1;
   color: #FFF;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
-  line-height: 1.2;
+  line-height: 26px;
   text-decoration-line: underline;
   text-transform: uppercase;
 }
@@ -253,7 +262,7 @@ li.header_links_list_item_active {
   position: relative;
   color: #fff;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 24px;
   z-index: 1;
 }
 
